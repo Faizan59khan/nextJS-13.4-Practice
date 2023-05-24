@@ -32,6 +32,7 @@ const Page = async () => {
 
   return (
     <div
+    className="text-blue"
       style={{
         display: "flex",
         alignItems: "center",
@@ -51,7 +52,7 @@ const Page = async () => {
       >
         Back
       </button>
-      <h1>Dynamic Fetch</h1>
+      <h1 className="text-blue-400">Dynamic Fetch</h1>
       <div style={{ overflow : "auto", height: "80%" }}>
         {responseDynamicData?.map((item: Product) => {
           return (
